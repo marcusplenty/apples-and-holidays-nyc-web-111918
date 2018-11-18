@@ -93,7 +93,6 @@ def all_supplies_in_holidays(holiday_hash)
            print x+element
           end
         end
-        puts
       end
   end
 
