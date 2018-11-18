@@ -83,19 +83,16 @@ def all_supplies_in_holidays(holiday_hash)
         arr1 = k1.to_s.split("_")
         arr2 = arr1.collect{|words|words.capitalize}
         y = "  " + arr2.join(" ") + ":"
-        print y
-
-        x =" "
         v1.each_with_index do |element,i|
           if i <v1.length - 1
-           print x+element+ ","
+            y= y+ " "+ element+ ","
           else
-           print x+element
+            y+= " " + element
           end
         end
+        puts y
       end
   end
-
 end
 
 def all_holidays_with_bbq(holiday_hash)
